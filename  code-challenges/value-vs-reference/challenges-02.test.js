@@ -24,7 +24,8 @@ Write a function that appends ' The end.' to a string, and returns the modified 
 ------------------------------------------------------------------------------------------------ */
 
 const appendTheEnd = (str) => {
-  // Solution code here...
+  str = str.concat(' The end.');
+  return str;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -41,7 +42,8 @@ console.log(a) prints [1, 2, 3, 1]
 ------------------------------------------------------------------------------------------------ */
 
 const appendFirstToLast = (arr) => {
-  // Solution code here...
+  let a = arr [0];
+  arr.push(a);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -50,7 +52,7 @@ CHALLENGE 4
 Write a function that accepts an object and an integer as arguments and adds a new property to the object called yearBorn. The value of the yearBorn property should be the integer that was passed in.
 
 The change should be reflected in the source object that was passed in to the function. That is, the function should modify the object 'in place'.
-
+es
 Do not use a return statement.
 
 For example:
@@ -60,7 +62,7 @@ console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 ------------------------------------------------------------------------------------------------ */
 
 const addBirthYearProperty = (obj, year) => {
-  // Solution code here...
+  obj.yearBorn = year;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -140,28 +142,24 @@ describe('Testing challenge 4', () => {
   test('It should add a property to an object', () => {
     const a = { fullName: 'Octavia Butler' };
     addBirthYearProperty(a, 1947);
-
     expect(a.yearBorn).toStrictEqual(1947);
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should add a property to every object in an array', () => {
     const a = [{ fullName: 'Octavia Butler' }, { fullName: 'Ray Bradbury' }, { fullName: 'Kurt Vonnegut' }];
     setStatusAsAuthor(a);
-
     expect(a[0].isAuthor).toStrictEqual(true);
     expect(a[1].isAuthor).toStrictEqual(true);
     expect(a[2].isAuthor).toStrictEqual(true);
   });
 });
-
-xdescribe('Testing challenge 6', () => {
+describe('Testing challenge 6', () => {
   test('It should append the second array to the first', () => {
     const a = [1, 2, 3, 4];
     const b = [5, 6, 7, 8];
     append(a, b);
-
     expect(a).toStrictEqual([1, 2, 3, 4, 5, 6, 7, 8]);
   });
 });
