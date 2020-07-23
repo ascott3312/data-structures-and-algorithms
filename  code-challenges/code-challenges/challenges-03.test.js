@@ -53,7 +53,7 @@ Write a function named sortByLength that takes in an array of strings and return
 ------------------------------------------------------------------------------------------------ */
 
 const sortByLength = (arr) => {
-  arr.sort((a,b) => a - b); {a.length - b.length; return arr};
+  arr.sort((a,b) => a.length - b.length); return arr};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
