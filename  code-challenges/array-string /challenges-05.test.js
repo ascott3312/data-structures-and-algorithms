@@ -60,11 +60,15 @@ For example, if the input is 'Welcome', the output will be:
 ['Welcome', 'elcome', 'lcome', 'come', 'ome', 'me', 'e', ''].
 ------------------------------------------------------------------------------------------------ */
 
-const howMuchPencil = (str) => {
-  let result = [];
-  // Solution code here...
-  return result;
-};
+const howMuchPencil = ('Welcome') ; {
+  let result = []
+ for ( i in howMuchPencil){
+    if(howMuchPencil.indexOf(howMuchPencil[i]) =-1 ) {
+       result=howMuchPencil[i];
+       howMuchPencil= howMuchPencil.slice(result.length)
+    } else { return howMuchPencil }   
+}
+}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -74,10 +78,15 @@ Write a function name wordsToCharList that, given a string as input, returns a n
 For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 ------------------------------------------------------------------------------------------------ */
 
-const wordsToCharList = (arr) => {
-  // Solution code here...
+ const wordsToCharList = ('gregpr') ; {
+  let result = [];
+  wordsToCharList.forEach(wordsToCharList => {
+    let string1 = wordsToCharList.slice(result.indexOf(' ')+1);
+    let string2 = wordsToCharList(string1.indexOf(' ')+1);
+    result.push(string2);
+  })
+  return result;
 };
-
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -119,13 +128,15 @@ const gruffaloCrumble = {
   ]
 };
 
-
 const listFoods = (recipe) => {
   let result = [];
-  // Solution code here...
+  recipe.ingredients.forEach(ingredient => {
+    let string1 = ingredient.slice(ingredient.indexOf(' ')+1);
+    let string2 = string1.slice(string1.indexOf(' ')+1);
+    result.push(string2);
+  })
   return result;
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
 

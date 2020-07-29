@@ -40,7 +40,8 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const isNum = (input) => {
-  // Solution code here...
+ expect(isNum(12345677890).toBeTruthy)();
+ expeect(isNum('12345').toBeTruthy)();
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -50,10 +51,10 @@ Write a function named isCapitalized that takes in a string. This function shoul
 
 Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
+const capitalResult = isCapitalized('We only want to Return the Words that begin With a capital Letter');
 
-const isCapitalized = (str) => {
-  // Solution code here...
-};
+expect(capitalResult).toStrictEqual([ 'We', 'Return', 'Words', 'With', 'Letter' ]);
+expect(capitalResult.length).toStrictEqual(5);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
