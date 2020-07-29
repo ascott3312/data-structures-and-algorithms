@@ -78,15 +78,12 @@ Write a function name wordsToCharList that, given a string as input, returns a n
 For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 ------------------------------------------------------------------------------------------------ */
 
- const wordsToCharList = ('gregpr') ; {
-  let result = [];
-  wordsToCharList.forEach(wordsToCharList => {
-    let string1 = wordsToCharList.slice(result.indexOf(' ')+1);
-    let string2 = wordsToCharList(string1.indexOf(' ')+1);
-    result.push(string2);
-  })
-  return result;
-};
+let wordsToCharList = function res(){
+  let wordsToCharList = ('Gregor');
+  let res1 = wordsToCharList.split (' ');
+  console.log(res1);
+}
+res();
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
