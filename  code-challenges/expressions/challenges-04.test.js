@@ -23,10 +23,9 @@ let $ = createSnippetWithJQuery(`
 `);
 
 const generateSubmitButton = () => {
-   let $newbutton = $('<button>').text('submit');
-   $('form').append($newbutton);  
-};
-
+   const button = $('<button type="button">submit</button');
+   $('form').append(button);  
+}
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -40,7 +39,8 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const isNum = (input) => {
-  // Solution code here...
+  let regex = /[0-9]/;
+  return reqex.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -50,9 +50,10 @@ Write a function named isCapitalized that takes in a string. This function shoul
 
 Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
-
 const isCapitalized = (str) => {
-  // Solution code here...
+  let regex = /[A-Z]\w+/g
+  let capitals = str.match(regex)
+  return capitals || [];
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -62,7 +63,14 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  // Solution code here...
+  let regex = /^[A-J]/g;
+  let cityA = [];
+  arr.forEach(city => {
+    if(city.match(regex)) {
+    cityA.push(city)
+    }
+  })
+ return cityA
 };
 
 /* ------------------------------------------------------------------------------------------------
