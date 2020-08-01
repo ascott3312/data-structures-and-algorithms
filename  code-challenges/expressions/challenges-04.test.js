@@ -23,10 +23,9 @@ let $ = createSnippetWithJQuery(`
 `);
 
 const generateSubmitButton = () => {
-   let $newbutton = $('<button>').text('submit');
-   $('form').append($newbutton);  
-};
-
+   const button = $('<button type="button">submit</button');
+   $('form').append(button);  
+}
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -39,9 +38,9 @@ For example:
 'hello world' returns false
 ------------------------------------------------------------------------------------------------ */
 
-const isNum = (input) => {
- expect(isNum(12345677890).toBeTruthy)();
- expeect(isNum('12345').toBeTruthy)();
+const citiesAtoJ = (input) => {
+  let regex = /[0 9]/;
+  return reqex.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -51,10 +50,11 @@ Write a function named isCapitalized that takes in a string. This function shoul
 
 Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
-const capitalResult = isCapitalized('We only want to Return the Words that begin With a capital Letter');
-
-expect(capitalResult).toStrictEqual([ 'We', 'Return', 'Words', 'With', 'Letter' ]);
-expect(capitalResult.length).toStrictEqual(5);
+const isCapitalized = (str) => {
+  let regex = /[A-Z]w+/g
+  let capitals = str.match(regex)
+  return capitals || [];
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -63,7 +63,14 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  // Solution code here...
+  let regex = /[A-J]/g;
+  let cityA = [];
+  arr.forEach(city => {
+    if(city.match(regex)) [{]
+    cityA.push(city)
+    }
+})
+ return cityA
 };
 
 /* ------------------------------------------------------------------------------------------------
