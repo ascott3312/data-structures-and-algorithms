@@ -7,16 +7,11 @@ Write a function named greeting that takes in a string and returns the string in
 
 Then, write a function named speaker that takes in a string and a callback function. The speaker function should return the string in all uppercase letters only by invoking the callback.
 ------------------------------------------------------------------------------------------------ */
-
-const greeting = (word) => {
-  // Solution code here...
+const greeting = (message) => {
+  return message.toUpperCase();
 };
-function greeting () {
-    
-}
-
 const speaker = (message, callback) => {
-  // Solution code here...
+  return callback(message);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -36,13 +31,14 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr, value) => {
-  // Solution code here...
+  arr.push(value);
 };
-
 const addNumbers = (num, arr, times, callback) => {
-  // Solution code here...
+  for(let i = 0; i < times; i++){
+    callback(arr, num);
+  }
+  return arr;
 };
-
 /* ------------------------------------------------------------------------------------------------
 
 CHALLENGE 3
@@ -61,10 +57,25 @@ The inventory is formatted like this:
 This function should use forEach to populate your grocery list based on the store's inventory. If the item is available, add it to your list. Return the final list.
 ------------------------------------------------------------------------------------------------ */
 
+// The inventory is formatted like this:
+[
+  { name: 'apples', available: true },
+  { name: 'pears', available: true },
+  { name: 'oranges', available: false },
+  { name: 'bananas', available: true },
+  { name: 'blueberries', available: false }
+]
+// This function should use forEach to populate your grocery list based on the store's inventory. If the item is available, add it to your list. Return the final list.
+// n------------------------------------------------------------------------------------------------ */
 const createList = (availableItems) => {
-  // Solution code here...
+  let result = [];
+  availableItems.forEach(function(item){
+    if(item.available === true){
+      result.push(item.name);
+    }
+  });
+  return result;
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
@@ -80,9 +91,23 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
-  // Solution code here...
+  let result = [];
+  arr.forEach(function(num){
+    if(num % 3 === 0 && num % 5 !== 0){
+      result.push('Fizz');
+    }
+    else if(num % 5 === 0 && num % 3 !== 0){
+      result.push('Buzz');
+    }
+    else if(num % 3 === 0 && num % 5 === 0){
+      result.push('Fizz Buzz');
+    }
+    else{
+      result.push(num);
+    }
+  });
+  return result;
 };
-
 /* ------------------------------------------------------------------------------------------------
 TESTS
 
