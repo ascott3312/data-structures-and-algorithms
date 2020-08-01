@@ -46,44 +46,31 @@ const templateWithJQuery = () => {
     $template.appendTo('main')
   })
 }
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
-
 Write a function named howMuchPencil that takes in a string, as written on the side of a pencil.
-
 As you sharpen the pencil, the string will become shorter and shorter, starting by removing the first letter.
-
 Your function should use slice within a loop and return an array of each successive string result from losing letters to the sharpener, until nothing is left.
-
 For example, if the input is 'Welcome', the output will be:
 ['Welcome', 'elcome', 'lcome', 'come', 'ome', 'me', 'e', ''].
 ------------------------------------------------------------------------------------------------ */
 
-const howMuchPencil = ('Welcome') ; {
-  let result = []
- for ( i in howMuchPencil){
-    if(howMuchPencil.indexOf(howMuchPencil[i]) =-1 ) {
-       result=howMuchPencil[i];
-       howMuchPencil= howMuchPencil.slice(result.length)
-    } else { return howMuchPencil }   
-}
-}
+const howMuchPencil = (str) => {
+  let result = [];
+  // Solution code here...
+  return result;
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
-
 Write a function name wordsToCharList that, given a string as input, returns a new array where every element is a character of the input string.
-
 For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 ------------------------------------------------------------------------------------------------ */
 
-let wordsToCharList = function res(){
-  let wordsToCharList = ('Gregor');
-  let res1 = wordsToCharList.split (' ');
-  console.log(res1);
-}
-res();
+const wordsToCharList = (arr) => {
+  // Solution code here...
+};
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
