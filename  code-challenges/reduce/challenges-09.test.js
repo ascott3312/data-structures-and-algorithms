@@ -159,7 +159,7 @@ const currentEvents = {
     ]
 }
 
-ffunction getCurrentEvents(request, response){
+function getCurrentEvents(request, response);{
 }
 const mapCurrentEvents = () => {
  const results = currentEvents.news.map((event) => new Event(event));

@@ -38,8 +38,8 @@ For example:
 'hello world' returns false
 ------------------------------------------------------------------------------------------------ */
 
-const citiesAtoJ = (input) => {
-  let regex = /[0 9]/;
+const isNum = (input) => {
+  let regex = /[0-9]/;
   return reqex.test(input);
 };
 
@@ -51,7 +51,7 @@ Write a function named isCapitalized that takes in a string. This function shoul
 Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 const isCapitalized = (str) => {
-  let regex = /[A-Z]w+/g
+  let regex = /[A-Z]\w+/g
   let capitals = str.match(regex)
   return capitals || [];
 };
@@ -63,13 +63,13 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  let regex = /[A-J]/g;
+  let regex = /^[A-J]/g;
   let cityA = [];
   arr.forEach(city => {
-    if(city.match(regex)) [{]
+    if(city.match(regex)) {
     cityA.push(city)
     }
-})
+  })
  return cityA
 };
 
