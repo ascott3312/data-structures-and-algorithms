@@ -56,9 +56,9 @@ For example, if the input is 'Welcome', the output will be:
 ------------------------------------------------------------------------------------------------ */
 
 const howMuchPencil = (str) => {
-  let result = [];
-  for(let i = 0; i < str.length; i++){
-  str.slice(1,8)  
+  let result = [' '];
+  for(let i = 0; i < howMuchPencil.length; i++){  
+  howMuchPencil.slice(1,8)
   return result;
 }};
 
@@ -69,9 +69,12 @@ For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 ------------------------------------------------------------------------------------------------ */
 
 const wordsToCharList = (arr) => {
-  // Solution code here...
+  let result = [' '];
+  for(let i = 0; i < wordsToCharList.length; i++) {
+  wordsToCharList.text.slice(1,1)
+  return result;
+  }
 };
-
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
