@@ -57,9 +57,10 @@ For example, if the input is 'Welcome', the output will be:
 
 const howMuchPencil = (str) => {
   let result = [];
-  // Solution code here...
+  for(let i = 0; i < str.length; i++){
+  str.slice(1,8)  
   return result;
-};
+}};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -342,4 +343,4 @@ xdescribe('Testing challenge 11', () => {
 
 function createSnippetWithJQuery(html){
   return cheerio.load(html);
-};
+}
