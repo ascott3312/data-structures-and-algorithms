@@ -56,10 +56,11 @@ For example, if the input is 'Welcome', the output will be:
 ------------------------------------------------------------------------------------------------ */
 
 const howMuchPencil = (str) => {
-  let result = [];
-  // Solution code here...
+  let result = [' '];
+  for(let i = 0; i < howMuchPencil.length; i++){  
+  howMuchPencil.slice(1,8)
   return result;
-};
+}};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -68,9 +69,12 @@ For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 ------------------------------------------------------------------------------------------------ */
 
 const wordsToCharList = (arr) => {
-  // Solution code here...
+  let result = [' '];
+  for(let i = 0; i < wordsToCharList.length; i++) {
+  wordsToCharList.text.slice(1,1)
+  return result;
+  }
 };
-
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -342,4 +346,4 @@ xdescribe('Testing challenge 11', () => {
 
 function createSnippetWithJQuery(html){
   return cheerio.load(html);
-};
+}
