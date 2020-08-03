@@ -55,12 +55,12 @@ For example, if the input is 'Welcome', the output will be:
 ['Welcome', 'elcome', 'lcome', 'come', 'ome', 'me', 'e', ''].
 ------------------------------------------------------------------------------------------------ */
 
-// const howMuchPencil = (str) => {
-//   howMuchPencil.forEach(function(str){
-//   let result = [' '];
-//   howMuchPencil.slice(1,i);
-//   return result;
-// },
+ const howMuchPencil = (str) => {
+  let result = []; 
+  howMuchPencil.forEach(function(str){ 
+  howMuchPencil.slice(1,i);
+   return result;
+ },
 
 
 /* ------------------------------------------------------------------------------------------------
