@@ -20,7 +20,7 @@ let $ = createSnippetWithJQuery(`
 `);
 
 const addTea = () => {
-  // Solution code here...
+  let teaOne = document.getElementById= 
 }
 
 /* ------------------------------------------------------------------------------------------------
