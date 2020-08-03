@@ -70,7 +70,7 @@ let $ = createSnippetWithJQuery(`
 `);
 
 const templatingWithMustache = () => {
-  // Solution code here...
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -85,21 +85,21 @@ const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningT
   finalExam: true
 };
 
-const getCourseKeys = (obj) => {
-  // Solution code here...
-};
+const getCourseKeys = courseInfo;
 
+let index = getCourseKeys.map(function(value, index, arr) {
+return index
+}
+  
+ 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
 Write a function named getHouses that returns a new array containing the names of all of the houses in the data set.
 ------------------------------------------------------------------------------------------------ */
 
-const getHouses = (arr) => {
-  let houses = [];
-  // Solution code here...
-  return houses;
-};
+// const getHouses = (arr) => 
+  
 
 /*------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -113,9 +113,8 @@ hasChildrenValues(characters, 'Cersei') will return true
 hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
-const hasChildrenValues = (arr, character) => {
+const hasChildrenValues = (arr) => {
   // Solution code here...
-
 };
 
 /* ------------------------------------------------------------------------------------------------

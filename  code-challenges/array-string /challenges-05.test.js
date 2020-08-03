@@ -55,12 +55,13 @@ For example, if the input is 'Welcome', the output will be:
 ['Welcome', 'elcome', 'lcome', 'come', 'ome', 'me', 'e', ''].
 ------------------------------------------------------------------------------------------------ */
 
-const howMuchPencil = (str) => {
-  let result = [' '];
-  for(let i = 0; i < howMuchPencil.length; i++){  
-  howMuchPencil.slice(1,8)
-  return result;
-}};
+// const howMuchPencil = (str) => {
+//   howMuchPencil.forEach(function(str){
+//   let result = [' '];
+//   howMuchPencil.slice(1,i);
+//   return result;
+// },
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -68,14 +69,12 @@ Write a function name wordsToCharList that, given a string as input, returns a n
 For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 ------------------------------------------------------------------------------------------------ */
 
-const wordsToCharList = (arr) => {
-  let result = [' '];
-  for(let i = 0; i < wordsToCharList.length; i++) {
-  wordsToCharList.text.slice(1,1)
-  return result;
-  }
-};
-
+// let wordsToCharList = (str) => {
+//   wordsToCharList.forEach(function(){
+//   let result = [' '];
+//   wordsToCharList.slice(i,i);
+//   return result;
+// },
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
@@ -114,7 +113,7 @@ const gruffaloCrumble = {
     'Spread the crisp evenly over the gruffalo mixture',
     'Bake for 12-15 hours',
   ]
-};
+}
 
 const listFoods = (recipe) => {
   let result = [];
