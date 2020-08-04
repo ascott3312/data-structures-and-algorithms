@@ -26,7 +26,7 @@ let starWarsPeople = [
   }
 ];
 
-let $ = createSnippetWithJQuery(`
+let $ = createSnippetWithJQuery(
 <main>
   <section id="template">
     <h2></h2>
@@ -34,7 +34,7 @@ let $ = createSnippetWithJQuery(`
     <p></p>
   </section>
 </main>
-`);
+);
 
 const templateWithJQuery = () => {
   starWarsPeople.forEach(function(person){
@@ -55,13 +55,13 @@ For example, if the input is 'Welcome', the output will be:
 ['Welcome', 'elcome', 'lcome', 'come', 'ome', 'me', 'e', ''].
 ------------------------------------------------------------------------------------------------ */
 
-// const howMuchPencil = (str) => {
-//   howMuchPencil.forEach(function(str){
-//   let result = [' '];
-//   howMuchPencil.slice(1,i);
-//   return result;
-// },
-
+const howMuchPencil = (str) => {
+  let result = [];
+  for(let i = 0; i <= `${str.length}`; i++) {
+    result.push(str.slice(i));
+  }
+  return result;
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -69,12 +69,14 @@ Write a function name wordsToCharList that, given a string as input, returns a n
 For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 ------------------------------------------------------------------------------------------------ */
 
-// let wordsToCharList = (str) => {
-//   wordsToCharList.forEach(function(){
-//   let result = [' '];
-//   wordsToCharList.slice(i,i);
-//   return result;
-// },
+const wordsToCharList = (arr) => {
+  let results = [];
+  for(let i = 0; i < `${arr.length}`; i++){
+    let x = (i + 1)
+    results.push(arr.slice(i,x))
+  }
+  return results
+};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
