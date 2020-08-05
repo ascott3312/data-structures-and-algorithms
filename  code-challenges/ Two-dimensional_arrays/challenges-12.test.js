@@ -1,4 +1,4 @@
-gi'use strict';
+'use strict';
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
@@ -9,8 +9,10 @@ using the 'reduce' method.
 E.g. [4,2,7,5,9,2] -> 9
 ------------------------------------------------------------------------------------------------ */
 const maxInArray = (arr) => {
-  // Solution code here...
-};
+    return arr.reduce(function(a, b) {
+        return Math.max(a, b)  
+    })
+}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -35,8 +37,17 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
-  // Solution code here...
-
+  let hourlyTotals = 0;
+  for( let i = 0; i < hoursOpen.length; i++){  
+    cookieStores.hourlyTotals = [i];
+    return hourlyTotals;
+    grandTotal = 0;
+    for ( let j = 0; j < hoursOpen.length; j++){
+      cookieStores.hourlyTotals = [j];
+      cookiesStroes.grandTotal = [j];
+      return grandTotal;
+    } 
+  } 
 };
 
 /* ------------------------------------------------------------------------------------------------
