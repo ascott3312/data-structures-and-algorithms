@@ -70,7 +70,6 @@ let $ = createSnippetWithJQuery(`
 `);
 
 const templatingWithMustache = () => {
-  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -85,10 +84,11 @@ const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningT
   finalExam: true
 };
 
-const getCourseKeys = courseInfo;
-
-let index = getCourseKeys.map(function(value, index, arr) {
-return index
+const getCourseKeys = courseInfo => {
+  let index = getCourseKeys.map(function(value, index, arr) 
+  {
+    return index
+  })
 }
   
  
