@@ -12,10 +12,11 @@ Note the space in between first and last names.
 You can assume that neither firstName nor lastName will be blank
 ------------------------------------------------------------------------------------------------ */
 const toLastNames = people => {
-return toLastNames; 
-map(function toLastNames(firstName, lastName)
-{return people.firstName + people.lastName}
-
+  return people.map(function (person)
+  {
+    return person.firstName + person.lastName
+  })
+}
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -26,11 +27,9 @@ Write a function named validatePin that uses a regular expression pattern to val
 If the PIN is four numerical digits long, return true. Otherwise, return false.
 ------------------------------------------------------------------------------------------------ */
  
-const validatePin = (pin) => {
-  
- }
- ;
-
+const validatePin = PIN => { 
+  return /[0-9];{4}/.test(PIN);
+};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
