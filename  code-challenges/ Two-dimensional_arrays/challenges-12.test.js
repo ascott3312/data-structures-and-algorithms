@@ -37,18 +37,23 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
-  let hourlyTotals = 0;
-  for( let i = 0; i < hoursOpen.length; i++){  
-    cookieStores.hourlyTotals = [i];
-    return hourlyTotals;
-    grandTotal = 0;
-    for ( let j = 0; j < hoursOpen.length; j++){
-      cookieStores.hourlyTotals = [j];
-      cookiesStroes.grandTotal = [j];
-      return grandTotal;
-    } 
-  } 
+  let hourlySales = [];
+
+  for(let hourIndex = 0; hourIndex < hoursOpen.length; hourIndex++) {
+    let hourlySum = 0;
+
+    for (let storeIndex = 0; storeIndex < stores.length; storeIndex++) {
+      let store = stores[storeIndex];
+
+      hourlySum += store[hourIndex];
+      console.log({ hourIndex, storeIndex, hourlySum })
+    }
+
+    hourlySales[hourIndex] = hourlySum;
+  }
+  return hourlySales;
 };
+grandTotal(cookieStores);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -86,9 +91,41 @@ const errands = [
 ];
 
 const howManyTreats = (arr) => {
-  // Solution code here...
+  return arr.reduce((treatCount, errand) =>
+    treatCount +
+      errand.items
+        .filter(item => item.name === 'Treats')
+        .reduce((errandTreatCount, treat) => errandTreatCount + treat.quantity, 0)
+    , 0);
+
+
+  let treatCount = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    let errand = arr[i];
+    let { items } = errand; // Destructuring!
+
+    for (let j = 0; j < items.length; j++) {
+      let item = items[j];
+
+      if (item.name === 'Treats') {
+        treatCount += item.quantity;
+      }
+    }
+  }
+
+  return treatCount;
+
+  // arr.forEach(errand => {
+  //   errand.items.forEach(item => {
+  //     if (item.name === 'Treats') {
+  //       treatCount += item.quantity;
+  //     }
+  //   })
+  // })
 };
 
+console.log(howManyTreats(errands));
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
 
