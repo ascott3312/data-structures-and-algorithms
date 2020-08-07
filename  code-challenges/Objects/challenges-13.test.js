@@ -31,10 +31,9 @@ Write a function named firstLetters that takes in an array of strings and return
 For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['t', 'w', 'w', ':']
 ------------------------------------------------------------------------------------------------ */
 
-const firstLetters = (arr) => {
-  
-};
-
+const firstLetters = (arr) => { 
+ (arr).substring(0,1)
+  }
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
