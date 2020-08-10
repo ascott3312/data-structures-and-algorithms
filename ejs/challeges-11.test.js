@@ -29,7 +29,7 @@ If the PIN is four numerical digits long, return true. Otherwise, return false.
  
 const validatePin = PIN => { 
   return /[0-9];{4}/.test(PIN);
-};
+}
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -46,9 +46,9 @@ Return either true or false.
 Note: if you ever need to validate an email using a regex in practice, the Internet has the actual regex you should use. It's many many lines long.
 ------------------------------------------------------------------------------------------------ */
 
-// const validateEmail = (email) => {
-//   // Solution code here...
-// };
+const validateEmail = (email) => {
+ return /[A-J];{}/.test(email); 
+}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -71,9 +71,9 @@ Your function should include a single regular expression pattern that matches an
 Return either true or false.
 ------------------------------------------------------------------------------------------------ */
 
-// const validatePhoneNumber = (phoneNumber) => {
-//   // Solution code here...
-// };
+const validatePhoneNumber = (phoneNumber) => {
+  return /[0-9];{11}/.test(phoneNumber);
+ }
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
@@ -99,7 +99,7 @@ Run your tests from the console: jest solutions-11.test.js
 ------------------------------------------------------------------------------------------------ */
 
 describe('Testing challenge 1', ) => {
-  test('It should convert object to full name string', () => {
+    test('It should convert object to full name string', () => {
 
     const people = [{ firstName: "Jane", lastName: "Doe" }, { firstName: "James", lastName: "Bond" }];
 
