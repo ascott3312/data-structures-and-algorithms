@@ -98,7 +98,7 @@ CHALLENGE 3
 Write a function named getHouses that returns a new array containing the names of all of the houses in the data set.
 ------------------------------------------------------------------------------------------------ */
 
-// const getHouses = (arr) => 
+ const getHouses = (arr) => {function (arr) }
   
 
 /*------------------------------------------------------------------------------------------------
